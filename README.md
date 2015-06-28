@@ -5,7 +5,7 @@
 
 单个汉字，一句话，中英文混合都支持
 
-拼音文件来自于 https://github.com/jifei/Pinyin， 感谢
+拼音文件来自于 https://github.com/jifei/Pinyin 感谢
 
 ####使用示例
 
