@@ -10,6 +10,7 @@ import java.util.HashMap;
  */
 public class Pinyin {
     private static HashMap<String, String> PINYIN = new HashMap<>();
+	private static final Pinyin pinyin;
 
     static {
         try {
@@ -18,6 +19,16 @@ public class Pinyin {
             e.printStackTrace();
         }
     }
+	
+	private Pinyin(){
+	}
+	
+	public static Pinyin instance(){
+		if(pinyin == null){
+			pinyin = new Pinyin();
+		}
+		return pinyin;
+	}
 
     /**
      * 拼音文件转成字典
